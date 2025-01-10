@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biometric Fractals!!</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="flex flex-row items-center justify-center p-6">
     <div class="background-grid"></div>
@@ -26,12 +26,18 @@
         >
         <button 
             onclick="generateFractal()" 
-            class="w-full text-white font-bold py-3 rounded-lg transition">
+            class="w-full text-white font-bold py-3 rounded-lg transition bg-blue-600 hover:bg-blue-700">
             Generate Fractal
         </button>
     </main>
 
-    <canvas id="fractalCanvas" class="mt-8 shadow-lg rounded-lg" style="margin-right:40px !important;"width="800" height="800"></canvas>
+    <canvas 
+        id="fractalCanvas" 
+        class="mt-8 shadow-lg rounded-lg" 
+        width="800" 
+        height="800" 
+        style="cursor: crosshair;">
+    </canvas>
 
     <script src="./script.js"></script>
 </body>
